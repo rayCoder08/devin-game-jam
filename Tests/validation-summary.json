@@ -1,0 +1,24 @@
+{
+  "suite": "Cupcake.Rules",
+  "succeeded": 1,
+  "failed": 0,
+  "checks": [
+    "unanswered bite",
+    "bite cooldown",
+    "cane windup/hit/respawn",
+    "sunlight knockout ignores immunity",
+    "round point awarded once",
+    "untouched round enters tiebreak",
+    "simultaneous tiebreak bites restart",
+    "three-restart coin-flip cap",
+    "bite while holding cane",
+    "first-to-two match and rematch",
+    "plate boundary",
+    "enlarged player collision, bite reach and boundary"
+  ],
+  "liveMatch": "Two WebSocket phone controllers completed a first-to-two match and rematch",
+  "physicalPhones": "User confirmed both tilt movement and HIT work on 2026-11-14",
+  "packagedKeyboard": "Passed on final Windows build with larger players and CandyWorld map",
+  "standaloneBuild": "Win64 Development package succeeded; zero failed rules tests",
+  "teamAudio": "Imported 12 supplied cues/music assets; bite-hit, cane-windup and sun-melt remain placeholders"
+}

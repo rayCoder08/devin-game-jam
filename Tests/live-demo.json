@@ -1,0 +1,306 @@
+{
+  "passed": true,
+  "error": null,
+  "events": [
+    {
+      "time": "2026-11-14T21:03:24.431Z",
+      "slot": 1,
+      "t": "joined",
+      "code": "KCAG",
+      "color": "#77503d"
+    },
+    {
+      "time": "2026-11-14T21:03:24.433Z",
+      "slot": 1,
+      "t": "state",
+      "color": "#77503d",
+      "pips": 5,
+      "points": 0,
+      "phase": "lobby",
+      "x": 350,
+      "y": 190
+    },
+    {
+      "time": "2026-11-14T21:03:24.433Z",
+      "slot": 0,
+      "t": "joined",
+      "code": "KCAG",
+      "color": "#f76b9b"
+    },
+    {
+      "time": "2026-11-14T21:03:24.433Z",
+      "slot": 0,
+      "t": "state",
+      "color": "#f76b9b",
+      "pips": 5,
+      "points": 0,
+      "phase": "lobby",
+      "x": -350,
+      "y": -190
+    },
+    {
+      "time": "2026-11-14T21:03:24.491Z",
+      "slot": 0,
+      "t": "state",
+      "color": "#f76b9b",
+      "pips": 5,
+      "points": 0,
+      "phase": "countdown",
+      "x": -350,
+      "y": -190
+    },
+    {
+      "time": "2026-11-14T21:03:24.524Z",
+      "slot": 1,
+      "t": "state",
+      "color": "#77503d",
+      "pips": 5,
+      "points": 0,
+      "phase": "countdown",
+      "x": 350,
+      "y": 190
+    },
+    {
+      "time": "2026-11-14T21:03:27.515Z",
+      "slot": 0,
+      "t": "state",
+      "color": "#f76b9b",
+      "pips": 5,
+      "points": 0,
+      "phase": "playing",
+      "x": -350,
+      "y": -190
+    },
+    {
+      "time": "2026-11-14T21:03:27.550Z",
+      "slot": 1,
+      "t": "state",
+      "color": "#77503d",
+      "pips": 5,
+      "points": 0,
+      "phase": "playing",
+      "x": 350,
+      "y": 190
+    },
+    {
+      "time": "2026-11-14T21:03:29.265Z",
+      "slot": 1,
+      "t": "state",
+      "color": "#77503d",
+      "pips": 4,
+      "points": 0,
+      "phase": "playing",
+      "x": 367.2,
+      "y": 199.4
+    },
+    {
+      "time": "2026-11-14T21:03:30.342Z",
+      "slot": 1,
+      "t": "state",
+      "color": "#77503d",
+      "pips": 3,
+      "points": 0,
+      "phase": "playing",
+      "x": 409.2,
+      "y": 222.2
+    },
+    {
+      "time": "2026-11-14T21:03:31.350Z",
+      "slot": 1,
+      "t": "state",
+      "color": "#77503d",
+      "pips": 2,
+      "points": 0,
+      "phase": "playing",
+      "x": 445.9,
+      "y": 242.1
+    },
+    {
+      "time": "2026-11-14T21:03:32.493Z",
+      "slot": 1,
+      "t": "state",
+      "color": "#77503d",
+      "pips": 1,
+      "points": 0,
+      "phase": "playing",
+      "x": 499.6,
+      "y": 271.2
+    },
+    {
+      "time": "2026-11-14T21:03:33.466Z",
+      "slot": 0,
+      "t": "state",
+      "color": "#f76b9b",
+      "pips": 5,
+      "points": 1,
+      "phase": "roundResult",
+      "x": 456.3,
+      "y": 247.7
+    },
+    {
+      "time": "2026-11-14T21:03:33.500Z",
+      "slot": 1,
+      "t": "state",
+      "color": "#77503d",
+      "pips": 0,
+      "points": 0,
+      "phase": "roundResult",
+      "x": 533.6,
+      "y": 289.7
+    },
+    {
+      "time": "2026-11-14T21:03:36.451Z",
+      "slot": 0,
+      "t": "state",
+      "color": "#f76b9b",
+      "pips": 5,
+      "points": 1,
+      "phase": "countdown",
+      "x": -350,
+      "y": -190
+    },
+    {
+      "time": "2026-11-14T21:03:36.485Z",
+      "slot": 1,
+      "t": "state",
+      "color": "#77503d",
+      "pips": 5,
+      "points": 0,
+      "phase": "countdown",
+      "x": 350,
+      "y": 190
+    },
+    {
+      "time": "2026-11-14T21:03:39.444Z",
+      "slot": 0,
+      "t": "state",
+      "color": "#f76b9b",
+      "pips": 5,
+      "points": 1,
+      "phase": "playing",
+      "x": -350,
+      "y": -190
+    },
+    {
+      "time": "2026-11-14T21:03:39.477Z",
+      "slot": 1,
+      "t": "state",
+      "color": "#77503d",
+      "pips": 5,
+      "points": 0,
+      "phase": "playing",
+      "x": 350,
+      "y": 190
+    },
+    {
+      "time": "2026-11-14T21:03:41.040Z",
+      "slot": 1,
+      "t": "state",
+      "color": "#77503d",
+      "pips": 4,
+      "points": 0,
+      "phase": "playing",
+      "x": 350,
+      "y": 190
+    },
+    {
+      "time": "2026-11-14T21:03:42.953Z",
+      "slot": 1,
+      "t": "state",
+      "color": "#77503d",
+      "pips": 3,
+      "points": 0,
+      "phase": "playing",
+      "x": 440.8,
+      "y": 239.3
+    },
+    {
+      "time": "2026-11-14T21:03:43.995Z",
+      "slot": 1,
+      "t": "state",
+      "color": "#77503d",
+      "pips": 2,
+      "points": 0,
+      "phase": "playing",
+      "x": 482.4,
+      "y": 261.9
+    },
+    {
+      "time": "2026-11-14T21:03:45.004Z",
+      "slot": 1,
+      "t": "state",
+      "color": "#77503d",
+      "pips": 1,
+      "points": 0,
+      "phase": "playing",
+      "x": 514.7,
+      "y": 279.4
+    },
+    {
+      "time": "2026-11-14T21:03:46.082Z",
+      "slot": 0,
+      "t": "state",
+      "color": "#f76b9b",
+      "pips": 5,
+      "points": 2,
+      "phase": "roundResult",
+      "x": 483.1,
+      "y": 262.3
+    },
+    {
+      "time": "2026-11-14T21:03:46.115Z",
+      "slot": 1,
+      "t": "state",
+      "color": "#77503d",
+      "pips": 0,
+      "points": 0,
+      "phase": "roundResult",
+      "x": 560.5,
+      "y": 304.2
+    },
+    {
+      "time": "2026-11-14T21:03:49.058Z",
+      "slot": 0,
+      "t": "state",
+      "color": "#f76b9b",
+      "pips": 5,
+      "points": 2,
+      "phase": "matchEnd",
+      "x": 483.1,
+      "y": 262.3
+    },
+    {
+      "time": "2026-11-14T21:03:49.104Z",
+      "slot": 1,
+      "t": "state",
+      "color": "#77503d",
+      "pips": 0,
+      "points": 0,
+      "phase": "matchEnd",
+      "x": 560.5,
+      "y": 304.2
+    },
+    {
+      "time": "2026-11-14T21:03:49.425Z",
+      "slot": 0,
+      "t": "state",
+      "color": "#f76b9b",
+      "pips": 5,
+      "points": 0,
+      "phase": "countdown",
+      "x": -350,
+      "y": -190
+    },
+    {
+      "time": "2026-11-14T21:03:49.462Z",
+      "slot": 1,
+      "t": "state",
+      "color": "#77503d",
+      "pips": 5,
+      "points": 0,
+      "phase": "countdown",
+      "x": 350,
+      "y": 190
+    }
+  ]
+}

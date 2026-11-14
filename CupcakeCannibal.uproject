@@ -1,0 +1,16 @@
+{
+  "FileVersion": 3,
+  "EngineAssociation": "5.6",
+  "Category": "Games",
+  "Description": "Cupcake Cannibal: a two-player bakery brawl",
+  "Modules": [{"Name":"CupcakeCannibal","Type":"Runtime","LoadingPhase":"Default"}],
+  "Plugins": [
+    {"Name":"PythonScriptPlugin","Enabled":true},
+    {"Name":"EditorScriptingUtilities","Enabled":true},
+    {"Name":"EnhancedInput","Enabled":true},
+    {"Name":"Interchange","Enabled":true},
+    {"Name":"Fab","Enabled":false},
+    {"Name":"Bridge","Enabled":false},
+    {"Name":"AndroidFileServer","Enabled":false}
+  ]
+}

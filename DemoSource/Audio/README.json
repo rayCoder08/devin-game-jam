@@ -1,0 +1,17 @@
+{
+  "status": "temporary synthesized tones",
+  "replace_with": "team-provided voice lines and sound effects",
+  "cues": [
+    "countdown",
+    "go",
+    "bite",
+    "hit",
+    "caneSwing",
+    "pickup",
+    "sunWarn",
+    "melt",
+    "roundWin",
+    "matchWin",
+    "tiebreak"
+  ]
+}

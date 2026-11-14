@@ -1,0 +1,18 @@
+{
+  "players": [
+    {
+      "name": "Strawberry",
+      "source": "Meshy_AI_cupcake_character_leg_1114201729_image-to-3d-texture.glb",
+      "asset": "/Game/Models/Strawberry/SM_Strawberry",
+      "mesh_count": 1,
+      "vertices": 4720
+    },
+    {
+      "name": "Chocolate",
+      "source": "Meshy_AI_Mint_Chocolate_Cupcak_1114201753_image-to-3d-texture.glb",
+      "asset": "/Game/Models/Chocolate/SM_Chocolate",
+      "mesh_count": 1,
+      "vertices": 5768
+    }
+  ]
+}

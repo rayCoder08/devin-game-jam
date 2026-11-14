@@ -1,0 +1,26 @@
+{
+  "environment": "CandyCarnival reference-video map",
+  "player_height_cm": 208,
+  "otter": "/Game/Props/Otter/SM_Otter",
+  "otter_height_cm": 380,
+  "otter_collision": "simple capsule",
+  "audio_sources": {
+    "countdown": "wav/countdown_tick.wav",
+    "go": "wav/countdown_go.wav",
+    "hit": "wav/cane_hit.wav",
+    "pickup": "wav/cane_pickup.wav",
+    "sunWarn": "wav/sun_warning.wav",
+    "roundWin": "wav/round_win.wav",
+    "matchWin": "wav/match_win.wav",
+    "tiebreak": "wav/tiebreak_start.wav",
+    "introVoice": "wav/countdown_321_cupcake.wav",
+    "hurtStrawberry": "wav/hurt_strawberry.wav",
+    "hurtChocolate": "wav/hurt_chocolate.wav",
+    "music": "music/cupcake_brawl.wav"
+  },
+  "placeholder_cues_remaining": [
+    "bite",
+    "caneSwing",
+    "melt"
+  ]
+}

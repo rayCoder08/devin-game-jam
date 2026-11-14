@@ -1,0 +1,7 @@
+{
+  "name":"cupcake-cannibal-relay","version":"0.1.0","private":true,"type":"module",
+  "description":"Phone input relay for the Unreal Cupcake Cannibal demo",
+  "engines":{"node":">=20"},
+  "scripts":{"start":"node server.js","test":"node --test test/*.test.js"},
+  "dependencies":{"express":"^5.1.0","ws":"^8.18.3","qrcode":"^1.5.4"}
+}
