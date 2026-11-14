@@ -1,144 +1,93 @@
 # Cupcake Cannibal — Project Context
 
 Everything decided in planning (2026-11-14). The implementation brief is in `prompt.md`.
+**Engine decision (final, 3:32 p.m.): Unreal Engine 5 on Windows.** The earlier browser-game plan is void.
 
 ## Event and deadlines
-- **Pitch:** two cupcakes chase each other around Cake-Land, land bites and race into a rematch. Story: a recipe-book origin and a first accidental taste, told in one opening line that the team will provide (use a placeholder until then).
+- **Pitch:** two cupcakes chase each other around Cake-Land, land bites and race into a rematch. Story: a recipe-book origin and a first accidental taste, told in one opening line the team will provide (placeholder until then).
 - **Chroma Awards track:** Game → Arcade & Party (quick rounds, accessible controls, friendly competition, strong game feel). https://chromaawards.com/prizes/game-arcade-party
-- **DevKick demo:** today at 5:00 p.m. Toronto. The winning team advances directly to the semifinals of its chosen category. https://devkick.com/005/#presentations
+- **DevKick demo:** today, 5:00 p.m. Toronto. The winning team advances directly to the semifinals of its category. https://devkick.com/005/#presentations
 - **Chroma public deadline:** Jan 7, 2027, 11:45 p.m. Pacific (Jan 8, 2:45 a.m. Toronto). https://chromaawards.com/faq
-- **Multiplayer reference:** the room-code + WebSocket pattern from King of the Ring. https://devpost.com/software/king-of-the-ring
+- **Multiplayer reference:** room-code + WebSocket pattern from King of the Ring. https://devpost.com/software/king-of-the-ring
 
 ## Chroma submission checklist (later, not today)
 - Submit once, under Arcade & Party.
-- Needs a public browser URL, a downloadable gameplay video, a thumbnail and English text or subtitles.
-- The rules require at least one AI tool. Tag Meshy (models) and ElevenLabs (audio), and keep screenshots or notes on what each produced. https://chromaawards.com/terms
-- Related awards:
-  - Meshy Awards: https://chromaawards.com/prizes/creative-tools-meshy-awards
-  - ElevenLabs Awards: https://chromaawards.com/prizes/creative-tools-elevenlabs-awards
-  - Meshy Game of the Year: https://chromaawards.com/prizes/game-meshy-game-of-the-year-award
-- The permanent public URL needs a WebSocket-capable host (e.g. Render or Fly). Netlify and Vercel static hosting can't run the server.
+- Needs a publicly playable build (the team's plan said a browser URL; UE5 can't ship to browsers, so confirm with Chroma that a downloadable Windows build is accepted), a gameplay video, a thumbnail and English text or subtitles.
+- Rules require at least one AI tool. Tag Meshy (models) and ElevenLabs (audio); keep screenshots or notes of what each produced. https://chromaawards.com/terms
+- Related awards: Meshy Awards https://chromaawards.com/prizes/creative-tools-meshy-awards · ElevenLabs Awards https://chromaawards.com/prizes/creative-tools-elevenlabs-awards · Meshy Game of the Year https://chromaawards.com/prizes/game-meshy-game-of-the-year-award
 
-## Control decision: one MacBook + two iPhones
-Three options were considered:
-
+## Control decision: one game PC + two iPhones
 | Option | Difficulty | Verdict |
 |---|---|---|
-| 1. One laptop + 2 phones (tilt) | 5.5/10 | **Chosen.** The laptop runs the whole match and the phones only send input. Keyboard fallback on the same screen. |
-| 2. Two laptops + 2 phones (tilt) | 8.5/10 | Rejected. Needs networked state sync for two screens and a second laptop, and doesn't fit 2 hours. |
-| 3. Two laptops, WASD | 6/10 | Rejected. Still needs networked sync and loses the phone hook. |
+| 1. One computer + 2 phones (tilt) | 5.5/10 (web) → ~7/10 in UE5 | **Chosen.** The game PC runs the whole match; phones only send input. Keyboard fallback on the same screen. |
+| 2. Two computers + 2 phones | 8.5/10 | Rejected: networked state sync for two screens, a second machine, doesn't fit 2 hours. |
+| 3. Two computers, WASD | 6/10 | Rejected: still needs networked sync and loses the phone hook. |
 
-## Hardware and software
-- **Development:** Codex on a Windows PC. Unreal Engine 5 is installed there but **is not used**: a UE5 build made on Windows can't be packaged for the Mac without Apple's build tools, and the team chose a browser game. All code goes to GitHub (`rayCoder08/devin-game-jam`). **Demo machine:** a MacBook that pulls from GitHub and runs the game.
-- **MacBook installs:**
-  - Node.js 20 LTS
-  - Git (`xcode-select --install`)
-  - cloudflared (`brew install cloudflared`)
-  - Chrome or Safari
-- **MacBook run commands:**
-  ```
-  git pull && npm install && npm run build && npm start
-  cloudflared tunnel --url http://localhost:3000
-  ```
-  Open the tunnel URL on the MacBook. The QR code it shows points the phones at the same URL.
-- **iPhones:** no app, Safari only.
-  - Scan the QR code with the Camera app.
-  - Tap Enable Motion, then Allow. iOS requires a tap before motion access (`DeviceOrientationEvent.requestPermission()`), and HTTPS.
-  - Pick or auto-claim P1/P2, then tap Ready to set the neutral tilt.
-  - Settings: Auto-Lock to Never, Low Power Mode off, phone charged, held in portrait.
-- **Cross-platform rules (Windows to Mac):**
-  - `.gitattributes` with `* text=auto eol=lf`.
-  - Commit `package-lock.json`; never commit `node_modules`.
-  - No Windows-only commands in npm scripts.
-  - Import paths must match filename case exactly.
-  - No native npm modules.
-- **Tunnel URL:** changes each run, so generate the QR code at runtime from `location.origin`.
-- **Testing without the Mac:** cloudflared also runs on Windows, so phones can be tested during development.
+## Machines
+- **Development and demo:** the **Windows PC** running Codex, with Unreal Engine 5 installed. It must also have Visual Studio 2022 with "Game development with C++" (UE needs it to compile the C++ WebSocket code), Node.js 20 and cloudflared (`winget install Cloudflare.cloudflared`).
+- **MacBook:** cannot run a UE5 Windows build (packaging for macOS needs a Mac with Xcode, and there is no time). Use it only for screen-sharing or notes. If the demo must be shown on the MacBook, share the Windows PC's screen.
+- **Repo:** `rayCoder08/devin-game-jam`. Commit the UE project with Git LFS for binary assets (`*.uasset`, `*.umap`, `*.glb`, `*.png`, `*.wav`, `*.mp3`). Ignore `Binaries/`, `Intermediate/`, `DerivedDataCache/`, `Saved/`, `.vs/`, `*.sln`.
 
-## iOS Safari gotchas
-- Motion needs HTTPS plus the permission tap.
-- Safari can't lock the screen orientation, so show a "rotate to portrait" overlay.
-- Keep the screen awake with Wake Lock (`navigator.wakeLock`, iOS 16.4+), with Auto-Lock Never as backup.
-- Use `touch-action: none` and no text selection, and prevent pinch, double-tap zoom and pull-to-refresh.
-- No vibration API, so feedback comes from the phone screen and MacBook audio.
-- Reconnect automatically to the same player slot when Safari returns from the background (`visibilitychange`). Clear held input on disconnect or page hide.
-- Use `deviceorientation` (beta/gamma) for tilt, not raw acceleration, which is too noisy.
+## How phone control works in UE5
+- iPhones can only talk WebSockets from Safari, and UE5's built-in `WebSockets` module is a **client**, so a tiny **Node relay** (`relay/`) runs on the Windows PC:
+  - serves the phone controller page over HTTP,
+  - relays phone input to the UE game, which connects as a WebSocket client to `ws://localhost:3000/ue`.
+- `cloudflared tunnel --url http://localhost:3000` gives the relay a public HTTPS URL. iOS requires HTTPS for motion sensors. The UE game shows a QR code of that URL plus a 4-letter room code.
+- **iPhones:** no app, Safari only. Scan the QR code with the Camera app → Enable Motion → Allow → Ready (sets neutral tilt). Settings: Auto-Lock Never, Low Power Mode off, charged, held in portrait.
+
+## iOS Safari gotchas (controller page)
+- Motion needs HTTPS plus a tap-triggered `DeviceOrientationEvent.requestPermission()`.
+- Safari can't lock orientation; show a "rotate to portrait" overlay.
+- Keep the screen awake with `navigator.wakeLock` (iOS 16.4+); Auto-Lock Never is the backup.
+- `touch-action:none`, no text selection, prevent pinch, double-tap zoom and pull-to-refresh.
+- No vibration API; feedback comes from the phone screen and the game audio.
+- Reconnect automatically to the same slot (`clientId` in localStorage). Clear held input on disconnect or page hide.
+- Use `deviceorientation` beta/gamma (tilt), not raw acceleration.
 
 ## Answered design questions
-
 | # | Question | Answer |
 |---|---|---|
-| 0 | Platform | Browser game (Vite + Three.js), built fresh |
-| 1 | Existing game | Not used; whatever is best → fresh build |
-| 2 | Models | 2 Meshy cupcake GLBs, already on GitHub (repo root) |
-| 3 | Audio | Uploaded later → placeholder sounds now, ElevenLabs files later in `public/audio/` |
+| 0 | Platform | **Unreal Engine 5** (changed from browser at 3:32 p.m.) |
+| 1 | Existing game | Team has a basic working game with the 3D models (not in the repo). Use it as the starting project if it is UE5; otherwise start from the Third Person template |
+| 2 | Models | 2 Meshy cupcake GLBs, in the repo root |
+| 3 | Audio | Uploaded later → placeholder sounds now; ElevenLabs files later |
 | 4 | Bite cooldown / immunity | 0.6 s cooldown, 0.8 s hit immunity; sunlight ignores immunity |
-| 5 | Controls | Phone tilt to move, no keys on the phone |
-| 6 | Cane drop on hit | No. The holder keeps it. Keep the visible windup, which the rules require |
-| 7 | Cane respawn | 6 s after it's used ("the end after it dies") |
-| 8 | Knockback | Small knockback on hit; cupcakes push each other (solid) |
-| 9 | Round start / result | 3-2-1 countdown each round; results auto-continue after ~3 s |
+| 5 | Controls | Phone tilt to move; no keys on the phone |
+| 6 | Cane drop on hit | No, the holder keeps it. Keep the visible windup (rules require it) |
+| 7 | Cane respawn | 6 s after it is used |
+| 8 | Knockback | Small knockback on hit; cupcakes are solid and push each other |
+| 9 | Round start / result | 3-2-1 countdown each round; result screen auto-continues after ~3 s |
 | 10 | Tiebreak limit | After 3 tiebreak restarts, a coin flip decides the round |
-| 11 | Rematch | From the MacBook or either phone |
+| 11 | Rematch | From the game PC or either phone |
 | 12 | Tone | Cute bakery brawl |
-| 13 | Arena | Round cake plate (2–3 small obstacles, e.g. a candle and a sprinkle jar) |
+| 13 | Arena | Round cake plate (2–3 small obstacles) |
 | 14 | Players | Strawberry (pink) vs Chocolate (brown) |
-| 15 | Opening story line | Team will paste it later (placeholder for now) |
+| 15 | Opening story line | Team pastes it later (placeholder) |
 | 16 | Tilt direction | Tilting forward moves the cupcake up the screen |
-| 17 | Phone display | Shows the player's color and frosting pips |
+| 17 | Phone display | Player color and frosting pips |
 | 18 | Hit input | One big **Hit** button on the phone |
 | 19 | Deploy | Tunnel-only for today's demo |
-| 20 | Cut order if late | Polish → tilt falls back to a touch joystick → tiebreak cap |
-| — | Keyboard fallback | Yes, hidden (not shown in UI): P1 WASD + F, P2 arrows + Enter |
+| 20 | Cut order if late | Polish → tilt (fall back to a phone touch joystick) → tiebreak cap |
+| — | Keyboard fallback | Yes, hidden: P1 WASD + F, P2 arrows + Enter |
 
-## Final combat and scoring rules (these replace all earlier proposals)
-- **Combat:**
-  - Both cupcakes can bite at any time, including while holding the cane.
-  - Each starts with **5 frosting pips**. A bite (close range, front arc) takes 1 pip.
-- **Candy Cane:**
-  - Spawns at arena center; touch it to pick it up.
-  - Gives **one** longer-reach swing for 1 pip, with a visible windup the other player can dodge.
-  - Respawns at center **6 s after it's used**.
+## Final combat and scoring rules (replace all earlier proposals)
+- **Combat:** both cupcakes can bite at any time, including while holding the cane. 5 frosting pips each. A bite (close range, front arc) takes 1 pip.
+- **Candy Cane:** spawns at center; touch to pick up. One longer-reach swing for 1 pip, with a visible windup. Respawns at center 6 s after it is used.
 - **Single Hit button:** bites if the opponent is in bite range; otherwise, if holding the cane, swings it.
-- **Sunlight:**
-  - The round lasts up to 60 s. Sunlight melts 1 pip from **both** cupcakes at **30, 45, 55 and 58 s**.
-  - A brief gold flash comes before each tick.
-  - Sunlight earns 0 Crumbs. Equal frosting stays equal, so the round needs a tiebreak.
-- **Crumbs:** a landed bite earns **2**, a cane hit earns **1**. Either hit takes 1 pip. Frosting and Crumbs reset each round.
-- **Match:** a round win is worth 1 round point; first to **2** wins the match.
-- **HUD:** each player's frosting pips, round points and the shared timer. Crumb totals appear on the round result screen.
-- **Round end:**
-  1. If exactly one cupcake reaches 0 frosting, the other wins.
-  2. At 60 s, more frosting wins.
-  3. If both reach 0 on the same update, or frosting is equal at 60 s, more Crumbs wins.
-  4. If Crumbs are also tied, start the **Golden Crumb tiebreak**:
-     - 10 s long, both players on 1 pip at their starting positions.
-     - Sunlight paused and cane cleared.
-     - The first uncontested bite wins.
-     - If both bite on the same update, or nobody bites, restart with no points. After 3 restarts, a coin flip decides.
-- **Implementation:**
-  - Track frosting, Crumbs and round points separately per player.
-  - Process both players' hits and any sunlight tick in the same simulation update, *then* check the result.
-  - Award the round point exactly once.
-- **Must-test cases:**
-  - an unanswered bite
-  - a cane hit
-  - a sunlight knockout
-  - an untouched round that goes to the tiebreak
-  - simultaneous bites in the tiebreak
+- **Sunlight:** round lasts up to 60 s. Melts 1 pip from both at **30, 45, 55, 58 s**, gold flash before each tick, 0 Crumbs, ignores immunity.
+- **Crumbs:** bite = 2, cane hit = 1. Either hit takes 1 pip. Frosting and Crumbs reset each round.
+- **Match:** round win = 1 round point; first to 2 wins. HUD shows pips, round points and the shared timer; Crumbs show on the round result screen.
+- **Round end order:** (1) exactly one at 0 pips → other wins; (2) at 60 s, more pips wins; (3) both at 0 on the same update, or equal pips at 60 s → more Crumbs wins; (4) equal Crumbs → **Golden Crumb tiebreak**: 10 s, both on 1 pip at start positions, sunlight paused, cane cleared, first uncontested bite wins; both bite on the same update or time out → restart with no points; after 3 restarts → coin flip.
+- **Implementation:** track frosting, Crumbs and round points per player. Process both players' hits and any sunlight tick in the same update, then check the result. Award the round point once.
+- **Must-test:** unanswered bite · cane hit · sunlight knockout · untouched round to tiebreak · simultaneous bites in the tiebreak.
 
 ## Assets in repo
-- `Meshy_AI_Mint_Chocolate_Cupcak_1114201753_image-to-3d-texture.glb` (~25 MB) → **Chocolate** player.
-- `Meshy_AI_cupcake_character_leg_1114201729_image-to-3d-texture.glb` (~33 MB) → **Strawberry** player (tint pink frosting if needed).
-- Only the MacBook loads the models, from localhost, so their size doesn't affect the phones. Compressing them is optional (`npx @gltf-transform/cli optimize in.glb out.glb --texture-compress webp`).
-- These are image-to-3D meshes and probably have no rig. Animate them in code: bob, squash and stretch, a lunge on bite.
+- `Meshy_AI_Mint_Chocolate_Cupcak_1114201753_image-to-3d-texture.glb` (~25 MB) → **Chocolate**.
+- `Meshy_AI_cupcake_character_leg_1114201729_image-to-3d-texture.glb` (~33 MB) → **Strawberry** (tint frosting pink if needed).
+- Import via UE's glTF importer (Interchange, UE 5.3+) as Static Meshes. They have no rig: animate in code (bob, squash, lunge, hit shake).
 
-## Build schedule (as planned at 2:55 p.m.)
-- **Estimated effort:**
-  - Game core: ~40 min
-  - Visuals, HUD and audio: ~25 min
-  - Phone control: ~45 min
-  - Integration and testing: ~20 min
-- **Feature freeze at 4:30.** 4:30–4:50: clean pull and run on the MacBook, edge-case tests, record a clip. 4:50–5:00: buffer.
-- **Cut rule:** if the phones aren't reliable by 4:15, demo with the hidden keyboard mode.
-- **Demo script:** one pairing, one bite, one rematch.
+## Schedule (updated 3:32 p.m., ~1h25 left)
+- Effort estimate in UE5: project + arena + pawns + rules ~45 min · relay + phone page ~20 min · UE WebSocket client + input ~20 min · polish ~15 min. Fits only with cuts; polish goes first.
+- **Feature freeze 4:30.** 4:30–4:50: clean launch, must-test cases, record a clip. 4:50–5:00: buffer.
+- **Cut rule:** phones not reliable by 4:15 → demo with the keyboard.
+- **Demo script:** one pairing, one bite, one rematch. Demo runs from the Windows PC (PIE in a standalone window or a packaged Win64 build).
