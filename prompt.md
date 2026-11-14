@@ -6,6 +6,8 @@ Read `context.md` first; it is the source of truth for rules and decisions. Buil
 - Windows PC with Unreal Engine 5 (use the installed 5.x; prefer 5.3+ for the glTF importer). The game is **developed and demoed on this PC**. Do not target macOS.
 - C++ project (the WebSocket client needs C++). Requires Visual Studio 2022 with "Game development with C++". If the C++ toolchain is missing, say so immediately, build keyboard-only in Blueprints, and skip the phones.
 - Also needs Node.js 20 and cloudflared (`winget install Cloudflare.cloudflared`).
+- Hardware: Intel Core 5 210H, 32 GB RAM, RTX 4050 Laptop GPU (**6 GB VRAM**) + Intel iGPU. Keep the arena light: project defaults to Scalability Medium/High; disable Lumen (use baked or simple dynamic lighting) and Nanite if frame rate drops below 60. Keep imported GLB textures at 2K max. The game must run on the NVIDIA GPU: note in the README to set `UnrealEditor.exe` and the packaged exe to "High performance" in Windows Graphics settings, and to run plugged in.
+- Demo hardware is this PC + 2 iPhones (Safari, nothing installed). No MacBook. Keep the cloudflared HTTPS tunnel: iOS Safari only allows motion access on HTTPS, and venue Wi-Fi may block phone-to-PC traffic.
 - Repo hygiene: `.gitignore` for UE (`Binaries/`, `Intermediate/`, `DerivedDataCache/`, `Saved/`, `.vs/`, `*.sln`), `.gitattributes` with Git LFS for `*.uasset *.umap *.glb *.png *.wav *.mp3`, and `* text=auto eol=lf` for text.
 
 ## Project layout
@@ -86,7 +88,7 @@ Tunable `UPROPERTY(EditAnywhere)` constants with these defaults: `Pips=5`, `Bite
 5. Visuals, HUD, audio polish. Then **feature freeze; bug fixes only.**
 
 ## README (short)
-- PC setup: UE5, VS2022 C++, Node 20, cloudflared.
+- PC setup: UE5, VS2022 C++, Node 20, cloudflared. Plug in; set UE/game to the NVIDIA GPU (Windows Graphics settings → High performance).
 - Run: `cd relay && npm install && npm start`; in another terminal `cloudflared tunnel --url http://localhost:3000`; set `PUBLIC_URL` to the tunnel URL (restart relay); open the project and Play in a standalone window (or launch the packaged Win64 build).
 - iPhone steps: scan QR → Enable Motion → Allow → Ready. Hidden keyboard keys.
 

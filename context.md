@@ -25,6 +25,10 @@ Everything decided in planning (2026-11-14). The implementation brief is in `pro
 
 ## Machines
 - **Development and demo:** the **Windows PC** running Codex, with Unreal Engine 5 installed. It must also have Visual Studio 2022 with "Game development with C++" (UE needs it to compile the C++ WebSocket code), Node.js 20 and cloudflared (`winget install Cloudflare.cloudflared`).
+- **Game PC hardware (Julian's laptop, "JulianSong"):** Intel Core 5 210H (2.2 GHz), 32 GB RAM, NVIDIA GeForce RTX 4050 Laptop GPU (6 GB VRAM) + Intel Graphics, Windows 64-bit x64, ~3.7 TB free, no touchscreen. Enough for a small arena game; 6 GB VRAM is the limit:
+  - Scalability Medium/High; Lumen and Nanite off if frames drop; no virtual shadow maps if needed.
+  - Run plugged in. In Windows Graphics settings (and NVIDIA Control Panel), set `UnrealEditor.exe` and the packaged game to the NVIDIA GPU, not Intel.
+- **Hardware needed for the demo: this one PC + 2 iPhones.** No MacBook. Phones need nothing installed (Safari only). Keep the cloudflared tunnel even on one PC: Safari only grants tilt on HTTPS pages, and venue Wi-Fi often blocks phone-to-laptop traffic.
 - **MacBook:** cannot run a UE5 Windows build (packaging for macOS needs a Mac with Xcode, and there is no time). Use it only for screen-sharing or notes. If the demo must be shown on the MacBook, share the Windows PC's screen.
 - **Repo:** `rayCoder08/devin-game-jam`. Commit the UE project with Git LFS for binary assets (`*.uasset`, `*.umap`, `*.glb`, `*.png`, `*.wav`, `*.mp3`). Ignore `Binaries/`, `Intermediate/`, `DerivedDataCache/`, `Saved/`, `.vs/`, `*.sln`.
 
