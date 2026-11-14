@@ -4,7 +4,7 @@ Read `context.md` first; it is the source of truth for rules and decisions. Buil
 
 ## Environment
 - Windows PC with Unreal Engine 5 (use the installed 5.x; prefer 5.3+ for the glTF importer). The game is **developed and demoed on this PC**. Do not target macOS.
-- C++ project (the WebSocket client needs C++). Requires Visual Studio 2022 with "Game development with C++". If the C++ toolchain is missing, say so immediately and fall back to a Blueprint-only project plus a marketplace-free alternative: run the relay's UDP bridge (see Relay) and read it with the built-in `Sockets`/`Networking` modules in C++… if even that is impossible, deliver keyboard-only.
+- C++ project (the WebSocket client needs C++). Requires Visual Studio 2022 with "Game development with C++". If the C++ toolchain is missing, say so immediately, build keyboard-only in Blueprints, and skip the phones.
 - Also needs Node.js 20 and cloudflared (`winget install Cloudflare.cloudflared`).
 - Repo hygiene: `.gitignore` for UE (`Binaries/`, `Intermediate/`, `DerivedDataCache/`, `Saved/`, `.vs/`, `*.sln`), `.gitattributes` with Git LFS for `*.uasset *.umap *.glb *.png *.wav *.mp3`, and `* text=auto eol=lf` for text.
 
