@@ -1,0 +1,16 @@
+Binaries/
+Intermediate/
+DerivedDataCache/
+Saved/
+.vs/
+*.sln
+*.suo
+*.VC.db
+*.log
+*.blend1
+*.blend2
+__pycache__/
+*.py[cod]
+node_modules/
+.env
+Backups/

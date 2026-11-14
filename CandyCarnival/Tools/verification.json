@@ -1,0 +1,15 @@
+{
+  "actors": 49,
+  "static_mesh_actors": 40,
+  "cameras": 4,
+  "missing_materials": [],
+  "play_started": true,
+  "pawn": "DefaultPawn",
+  "start": [
+    100.0,
+    3800.0,
+    220.00000000000003
+  ],
+  "movement_distance_cm": 273.70243021728425,
+  "default_movement_bindings": true
+}

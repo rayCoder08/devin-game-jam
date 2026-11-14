@@ -1,0 +1,308 @@
+{
+  "assets": [
+    {
+      "name": "SM_01_Strawberry_Meadow",
+      "mode": "surface",
+      "convex_hulls": 0,
+      "simple_shapes": 0,
+      "surface_triangles": 5000
+    },
+    {
+      "name": "SM_02_Winding_Biscuit_Path",
+      "mode": "surface",
+      "convex_hulls": 0,
+      "simple_shapes": 0,
+      "surface_triangles": 320
+    },
+    {
+      "name": "SM_03_Caramel_Stream",
+      "mode": "surface",
+      "convex_hulls": 0,
+      "simple_shapes": 0,
+      "surface_triangles": 160
+    },
+    {
+      "name": "SM_04_Distant_Sherbet_Hills",
+      "mode": "convex",
+      "convex_hulls": 24,
+      "simple_shapes": 0,
+      "surface_triangles": 0
+    },
+    {
+      "name": "SM_05_Grand_Bonbon_Pavilion",
+      "mode": "convex",
+      "convex_hulls": 131,
+      "simple_shapes": 0,
+      "surface_triangles": 0
+    },
+    {
+      "name": "SM_06_Lavender_Macaron_Stall",
+      "mode": "convex",
+      "convex_hulls": 96,
+      "simple_shapes": 0,
+      "surface_triangles": 0
+    },
+    {
+      "name": "SM_07_Peach_Popcorn_Stall",
+      "mode": "convex",
+      "convex_hulls": 96,
+      "simple_shapes": 0,
+      "surface_triangles": 0
+    },
+    {
+      "name": "SM_08_Mint_Sweetshop",
+      "mode": "convex",
+      "convex_hulls": 96,
+      "simple_shapes": 0,
+      "surface_triangles": 0
+    },
+    {
+      "name": "SM_09_Berry_Sweetshop",
+      "mode": "convex",
+      "convex_hulls": 96,
+      "simple_shapes": 0,
+      "surface_triangles": 0
+    },
+    {
+      "name": "SM_10_Peppermint_Gate_00",
+      "mode": "convex",
+      "convex_hulls": 14,
+      "simple_shapes": 0,
+      "surface_triangles": 0
+    },
+    {
+      "name": "SM_10_Peppermint_Gate_01",
+      "mode": "convex",
+      "convex_hulls": 14,
+      "simple_shapes": 0,
+      "surface_triangles": 0
+    },
+    {
+      "name": "SM_10_Peppermint_Gate_02",
+      "mode": "convex",
+      "convex_hulls": 14,
+      "simple_shapes": 0,
+      "surface_triangles": 0
+    },
+    {
+      "name": "SM_10_Peppermint_Gate_03",
+      "mode": "convex",
+      "convex_hulls": 14,
+      "simple_shapes": 0,
+      "surface_triangles": 0
+    },
+    {
+      "name": "SM_10_Peppermint_Gate_04",
+      "mode": "convex",
+      "convex_hulls": 14,
+      "simple_shapes": 0,
+      "surface_triangles": 0
+    },
+    {
+      "name": "SM_10_Peppermint_Gate_05",
+      "mode": "convex",
+      "convex_hulls": 14,
+      "simple_shapes": 0,
+      "surface_triangles": 0
+    },
+    {
+      "name": "SM_11_Candy_Apple_00",
+      "mode": "convex",
+      "convex_hulls": 12,
+      "simple_shapes": 0,
+      "surface_triangles": 0
+    },
+    {
+      "name": "SM_11_Candy_Apple_01",
+      "mode": "convex",
+      "convex_hulls": 12,
+      "simple_shapes": 0,
+      "surface_triangles": 0
+    },
+    {
+      "name": "SM_11_Candy_Apple_02",
+      "mode": "convex",
+      "convex_hulls": 5,
+      "simple_shapes": 0,
+      "surface_triangles": 0
+    },
+    {
+      "name": "SM_11_Candy_Apple_03",
+      "mode": "convex",
+      "convex_hulls": 12,
+      "simple_shapes": 0,
+      "surface_triangles": 0
+    },
+    {
+      "name": "SM_11_Candy_Apple_04",
+      "mode": "convex",
+      "convex_hulls": 5,
+      "simple_shapes": 0,
+      "surface_triangles": 0
+    },
+    {
+      "name": "SM_11_Candy_Apple_05",
+      "mode": "convex",
+      "convex_hulls": 12,
+      "simple_shapes": 0,
+      "surface_triangles": 0
+    },
+    {
+      "name": "SM_11_Candy_Apple_06",
+      "mode": "convex",
+      "convex_hulls": 5,
+      "simple_shapes": 0,
+      "surface_triangles": 0
+    },
+    {
+      "name": "SM_11_Candy_Apple_07",
+      "mode": "convex",
+      "convex_hulls": 5,
+      "simple_shapes": 0,
+      "surface_triangles": 0
+    },
+    {
+      "name": "SM_11_Candy_Apple_08",
+      "mode": "convex",
+      "convex_hulls": 5,
+      "simple_shapes": 0,
+      "surface_triangles": 0
+    },
+    {
+      "name": "SM_11_Candy_Apple_09",
+      "mode": "convex",
+      "convex_hulls": 5,
+      "simple_shapes": 0,
+      "surface_triangles": 0
+    },
+    {
+      "name": "SM_12_Popcorn_00",
+      "mode": "convex",
+      "convex_hulls": 2,
+      "simple_shapes": 0,
+      "surface_triangles": 0
+    },
+    {
+      "name": "SM_12_Popcorn_01",
+      "mode": "convex",
+      "convex_hulls": 2,
+      "simple_shapes": 0,
+      "surface_triangles": 0
+    },
+    {
+      "name": "SM_12_Popcorn_02",
+      "mode": "convex",
+      "convex_hulls": 2,
+      "simple_shapes": 0,
+      "surface_triangles": 0
+    },
+    {
+      "name": "SM_12_Popcorn_03",
+      "mode": "convex",
+      "convex_hulls": 2,
+      "simple_shapes": 0,
+      "surface_triangles": 0
+    },
+    {
+      "name": "SM_12_Popcorn_04",
+      "mode": "convex",
+      "convex_hulls": 2,
+      "simple_shapes": 0,
+      "surface_triangles": 0
+    },
+    {
+      "name": "SM_13_Gumdrop_Gardens",
+      "mode": "convex",
+      "convex_hulls": 72,
+      "simple_shapes": 0,
+      "surface_triangles": 0
+    },
+    {
+      "name": "SM_14_Sugar_Flowers",
+      "mode": "convex",
+      "convex_hulls": 71,
+      "simple_shapes": 0,
+      "surface_triangles": 0
+    },
+    {
+      "name": "SM_15_Rainbow_Sprinkles",
+      "mode": "convex",
+      "convex_hulls": 335,
+      "simple_shapes": 0,
+      "surface_triangles": 0
+    },
+    {
+      "name": "SM_16_Festival_Bunting_Left",
+      "mode": "convex",
+      "convex_hulls": 29,
+      "simple_shapes": 0,
+      "surface_triangles": 0
+    },
+    {
+      "name": "SM_17_Festival_Bunting_Right",
+      "mode": "convex",
+      "convex_hulls": 29,
+      "simple_shapes": 0,
+      "surface_triangles": 0
+    },
+    {
+      "name": "SM_18_Cupcake_Welcoming_Committee",
+      "mode": "convex",
+      "convex_hulls": 6,
+      "simple_shapes": 0,
+      "surface_triangles": 0
+    },
+    {
+      "name": "SM_19_Marshmallow_Clouds",
+      "mode": "convex",
+      "convex_hulls": 25,
+      "simple_shapes": 0,
+      "surface_triangles": 0
+    }
+  ],
+  "surface_triangles": 5480,
+  "source_collision_hulls": 1278,
+  "sky_collision": false,
+  "collidable_actors": [
+    "01_Strawberry_Meadow",
+    "02_Winding_Biscuit_Path",
+    "03_Caramel_Stream",
+    "04_Distant_Sherbet_Hills",
+    "05_Grand_Bonbon_Pavilion",
+    "06_Lavender_Macaron_Stall",
+    "07_Peach_Popcorn_Stall",
+    "08_Mint_Sweetshop",
+    "09_Berry_Sweetshop",
+    "10_Peppermint_Gate_00",
+    "10_Peppermint_Gate_01",
+    "10_Peppermint_Gate_02",
+    "10_Peppermint_Gate_03",
+    "10_Peppermint_Gate_04",
+    "10_Peppermint_Gate_05",
+    "11_Candy_Apple_00",
+    "11_Candy_Apple_01",
+    "11_Candy_Apple_02",
+    "11_Candy_Apple_03",
+    "11_Candy_Apple_04",
+    "11_Candy_Apple_05",
+    "11_Candy_Apple_06",
+    "11_Candy_Apple_07",
+    "11_Candy_Apple_08",
+    "11_Candy_Apple_09",
+    "12_Popcorn_00",
+    "12_Popcorn_01",
+    "12_Popcorn_02",
+    "12_Popcorn_03",
+    "12_Popcorn_04",
+    "13_Gumdrop_Gardens",
+    "14_Sugar_Flowers",
+    "15_Rainbow_Sprinkles",
+    "16_Festival_Bunting_Left",
+    "17_Festival_Bunting_Right",
+    "18_Cupcake_Welcoming_Committee",
+    "19_Marshmallow_Clouds",
+    "Marquee - gilt oval",
+    "Marquee - raspberry enamel"
+  ],
+  "total_convex_hulls": 1279
+}

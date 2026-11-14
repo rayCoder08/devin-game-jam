@@ -1,0 +1,276 @@
+{
+  "tests": [
+    {
+      "test": "ground surface",
+      "blocked": true,
+      "expected": true
+    },
+    {
+      "test": "golden path surface",
+      "blocked": true,
+      "expected": true
+    },
+    {
+      "test": "caramel surface",
+      "blocked": true,
+      "expected": true
+    },
+    {
+      "test": "cane 0 shaft",
+      "blocked": true,
+      "expected": true
+    },
+    {
+      "test": "cane 0 open hook",
+      "blocked": false,
+      "expected": false
+    },
+    {
+      "test": "cane 1 shaft",
+      "blocked": true,
+      "expected": true
+    },
+    {
+      "test": "cane 1 open hook",
+      "blocked": false,
+      "expected": false
+    },
+    {
+      "test": "cane 2 shaft",
+      "blocked": true,
+      "expected": true
+    },
+    {
+      "test": "cane 2 open hook",
+      "blocked": false,
+      "expected": false
+    },
+    {
+      "test": "cane 3 shaft",
+      "blocked": true,
+      "expected": true
+    },
+    {
+      "test": "cane 3 open hook",
+      "blocked": false,
+      "expected": false
+    },
+    {
+      "test": "cane 4 shaft",
+      "blocked": true,
+      "expected": true
+    },
+    {
+      "test": "cane 4 open hook",
+      "blocked": false,
+      "expected": false
+    },
+    {
+      "test": "cane 5 shaft",
+      "blocked": true,
+      "expected": true
+    },
+    {
+      "test": "cane 5 open hook",
+      "blocked": false,
+      "expected": false
+    },
+    {
+      "test": "grand tent doorway",
+      "blocked": false,
+      "expected": false
+    },
+    {
+      "test": "grand tent interior",
+      "blocked": false,
+      "expected": false
+    },
+    {
+      "test": "grand tent wall",
+      "blocked": true,
+      "expected": true
+    },
+    {
+      "test": "grand tent roof",
+      "blocked": true,
+      "expected": true
+    },
+    {
+      "test": "stall open aisle",
+      "blocked": false,
+      "expected": false
+    },
+    {
+      "test": "stall countertop",
+      "blocked": true,
+      "expected": true
+    },
+    {
+      "test": "apple 0 fruit",
+      "blocked": true,
+      "expected": true
+    },
+    {
+      "test": "apple 0 slender stick",
+      "blocked": true,
+      "expected": true
+    },
+    {
+      "test": "apple 1 fruit",
+      "blocked": true,
+      "expected": true
+    },
+    {
+      "test": "apple 1 slender stick",
+      "blocked": true,
+      "expected": true
+    },
+    {
+      "test": "apple 2 fruit",
+      "blocked": true,
+      "expected": true
+    },
+    {
+      "test": "apple 2 slender stick",
+      "blocked": true,
+      "expected": true
+    },
+    {
+      "test": "apple 3 fruit",
+      "blocked": true,
+      "expected": true
+    },
+    {
+      "test": "apple 3 slender stick",
+      "blocked": true,
+      "expected": true
+    },
+    {
+      "test": "apple 4 fruit",
+      "blocked": true,
+      "expected": true
+    },
+    {
+      "test": "apple 4 slender stick",
+      "blocked": true,
+      "expected": true
+    },
+    {
+      "test": "apple 5 fruit",
+      "blocked": true,
+      "expected": true
+    },
+    {
+      "test": "apple 5 slender stick",
+      "blocked": true,
+      "expected": true
+    },
+    {
+      "test": "apple 6 fruit",
+      "blocked": true,
+      "expected": true
+    },
+    {
+      "test": "apple 6 slender stick",
+      "blocked": true,
+      "expected": true
+    },
+    {
+      "test": "apple 7 fruit",
+      "blocked": true,
+      "expected": true
+    },
+    {
+      "test": "apple 7 slender stick",
+      "blocked": true,
+      "expected": true
+    },
+    {
+      "test": "apple 8 fruit",
+      "blocked": true,
+      "expected": true
+    },
+    {
+      "test": "apple 8 slender stick",
+      "blocked": true,
+      "expected": true
+    },
+    {
+      "test": "apple 9 fruit",
+      "blocked": true,
+      "expected": true
+    },
+    {
+      "test": "apple 9 slender stick",
+      "blocked": true,
+      "expected": true
+    },
+    {
+      "test": "space between apple trees",
+      "blocked": false,
+      "expected": false
+    },
+    {
+      "test": "popcorn 0 bucket",
+      "blocked": true,
+      "expected": true
+    },
+    {
+      "test": "popcorn 1 bucket",
+      "blocked": true,
+      "expected": true
+    },
+    {
+      "test": "popcorn 2 bucket",
+      "blocked": true,
+      "expected": true
+    },
+    {
+      "test": "popcorn 3 bucket",
+      "blocked": true,
+      "expected": true
+    },
+    {
+      "test": "popcorn 4 bucket",
+      "blocked": true,
+      "expected": true
+    },
+    {
+      "test": "marquee oval",
+      "blocked": true,
+      "expected": true
+    }
+  ],
+  "passed": 48,
+  "static_mesh_actors": 40,
+  "collidable_actors": 39,
+  "play_tests": [
+    {
+      "test": "cane stops explorer",
+      "passed": true,
+      "position": [
+        -859.6121911037269,
+        2900.0,
+        170.41820556124748
+      ]
+    },
+    {
+      "test": "wall stops explorer",
+      "passed": true,
+      "position": [
+        1033.1121215482342,
+        -3500.0,
+        200.0
+      ]
+    },
+    {
+      "test": "doorway admits explorer",
+      "passed": true,
+      "position": [
+        0.0,
+        -4039.359556496968,
+        200.0
+      ]
+    }
+  ]
+}

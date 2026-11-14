@@ -1,0 +1,300 @@
+{
+  "assets": [
+    {
+      "name": "SM_01_Strawberry_Meadow",
+      "mode": "surface",
+      "file": "COL_SM_01_Strawberry_Meadow.fbx",
+      "collision_mesh": "COL_SM_01_Strawberry_Meadow",
+      "triangles": 5000
+    },
+    {
+      "name": "SM_02_Winding_Biscuit_Path",
+      "mode": "surface",
+      "file": "COL_SM_02_Winding_Biscuit_Path.fbx",
+      "collision_mesh": "COL_SM_02_Winding_Biscuit_Path",
+      "triangles": 320
+    },
+    {
+      "name": "SM_03_Caramel_Stream",
+      "mode": "surface",
+      "file": "COL_SM_03_Caramel_Stream.fbx",
+      "collision_mesh": "COL_SM_03_Caramel_Stream",
+      "triangles": 160
+    },
+    {
+      "name": "SM_04_Distant_Sherbet_Hills",
+      "mode": "convex",
+      "file": "SM_04_Distant_Sherbet_Hills.fbx",
+      "hulls": 24,
+      "max_vertices": 42,
+      "collision_triangles": 1920
+    },
+    {
+      "name": "SM_05_Grand_Bonbon_Pavilion",
+      "mode": "convex",
+      "file": "SM_05_Grand_Bonbon_Pavilion.fbx",
+      "hulls": 131,
+      "max_vertices": 42,
+      "collision_triangles": 2528
+    },
+    {
+      "name": "SM_06_Lavender_Macaron_Stall",
+      "mode": "convex",
+      "file": "SM_06_Lavender_Macaron_Stall.fbx",
+      "hulls": 96,
+      "max_vertices": 42,
+      "collision_triangles": 1924
+    },
+    {
+      "name": "SM_07_Peach_Popcorn_Stall",
+      "mode": "convex",
+      "file": "SM_07_Peach_Popcorn_Stall.fbx",
+      "hulls": 96,
+      "max_vertices": 42,
+      "collision_triangles": 1924
+    },
+    {
+      "name": "SM_08_Mint_Sweetshop",
+      "mode": "convex",
+      "file": "SM_08_Mint_Sweetshop.fbx",
+      "hulls": 96,
+      "max_vertices": 42,
+      "collision_triangles": 1924
+    },
+    {
+      "name": "SM_09_Berry_Sweetshop",
+      "mode": "convex",
+      "file": "SM_09_Berry_Sweetshop.fbx",
+      "hulls": 96,
+      "max_vertices": 42,
+      "collision_triangles": 1924
+    },
+    {
+      "name": "SM_10_Peppermint_Gate_00",
+      "mode": "convex",
+      "file": "SM_10_Peppermint_Gate_00.fbx",
+      "hulls": 14,
+      "max_vertices": 24,
+      "collision_triangles": 408
+    },
+    {
+      "name": "SM_10_Peppermint_Gate_01",
+      "mode": "convex",
+      "file": "SM_10_Peppermint_Gate_01.fbx",
+      "hulls": 14,
+      "max_vertices": 24,
+      "collision_triangles": 408
+    },
+    {
+      "name": "SM_10_Peppermint_Gate_02",
+      "mode": "convex",
+      "file": "SM_10_Peppermint_Gate_02.fbx",
+      "hulls": 14,
+      "max_vertices": 24,
+      "collision_triangles": 408
+    },
+    {
+      "name": "SM_10_Peppermint_Gate_03",
+      "mode": "convex",
+      "file": "SM_10_Peppermint_Gate_03.fbx",
+      "hulls": 14,
+      "max_vertices": 24,
+      "collision_triangles": 408
+    },
+    {
+      "name": "SM_10_Peppermint_Gate_04",
+      "mode": "convex",
+      "file": "SM_10_Peppermint_Gate_04.fbx",
+      "hulls": 14,
+      "max_vertices": 24,
+      "collision_triangles": 408
+    },
+    {
+      "name": "SM_10_Peppermint_Gate_05",
+      "mode": "convex",
+      "file": "SM_10_Peppermint_Gate_05.fbx",
+      "hulls": 14,
+      "max_vertices": 24,
+      "collision_triangles": 408
+    },
+    {
+      "name": "SM_11_Candy_Apple_00",
+      "mode": "convex",
+      "file": "SM_11_Candy_Apple_00.fbx",
+      "hulls": 12,
+      "max_vertices": 42,
+      "collision_triangles": 500
+    },
+    {
+      "name": "SM_11_Candy_Apple_01",
+      "mode": "convex",
+      "file": "SM_11_Candy_Apple_01.fbx",
+      "hulls": 12,
+      "max_vertices": 42,
+      "collision_triangles": 500
+    },
+    {
+      "name": "SM_11_Candy_Apple_02",
+      "mode": "convex",
+      "file": "SM_11_Candy_Apple_02.fbx",
+      "hulls": 5,
+      "max_vertices": 42,
+      "collision_triangles": 324
+    },
+    {
+      "name": "SM_11_Candy_Apple_03",
+      "mode": "convex",
+      "file": "SM_11_Candy_Apple_03.fbx",
+      "hulls": 12,
+      "max_vertices": 42,
+      "collision_triangles": 500
+    },
+    {
+      "name": "SM_11_Candy_Apple_04",
+      "mode": "convex",
+      "file": "SM_11_Candy_Apple_04.fbx",
+      "hulls": 5,
+      "max_vertices": 42,
+      "collision_triangles": 324
+    },
+    {
+      "name": "SM_11_Candy_Apple_05",
+      "mode": "convex",
+      "file": "SM_11_Candy_Apple_05.fbx",
+      "hulls": 12,
+      "max_vertices": 42,
+      "collision_triangles": 500
+    },
+    {
+      "name": "SM_11_Candy_Apple_06",
+      "mode": "convex",
+      "file": "SM_11_Candy_Apple_06.fbx",
+      "hulls": 5,
+      "max_vertices": 42,
+      "collision_triangles": 324
+    },
+    {
+      "name": "SM_11_Candy_Apple_07",
+      "mode": "convex",
+      "file": "SM_11_Candy_Apple_07.fbx",
+      "hulls": 5,
+      "max_vertices": 42,
+      "collision_triangles": 324
+    },
+    {
+      "name": "SM_11_Candy_Apple_08",
+      "mode": "convex",
+      "file": "SM_11_Candy_Apple_08.fbx",
+      "hulls": 5,
+      "max_vertices": 42,
+      "collision_triangles": 324
+    },
+    {
+      "name": "SM_11_Candy_Apple_09",
+      "mode": "convex",
+      "file": "SM_11_Candy_Apple_09.fbx",
+      "hulls": 5,
+      "max_vertices": 42,
+      "collision_triangles": 324
+    },
+    {
+      "name": "SM_12_Popcorn_00",
+      "mode": "convex",
+      "file": "SM_12_Popcorn_00.fbx",
+      "hulls": 2,
+      "max_vertices": 42,
+      "collision_triangles": 136
+    },
+    {
+      "name": "SM_12_Popcorn_01",
+      "mode": "convex",
+      "file": "SM_12_Popcorn_01.fbx",
+      "hulls": 2,
+      "max_vertices": 42,
+      "collision_triangles": 136
+    },
+    {
+      "name": "SM_12_Popcorn_02",
+      "mode": "convex",
+      "file": "SM_12_Popcorn_02.fbx",
+      "hulls": 2,
+      "max_vertices": 42,
+      "collision_triangles": 136
+    },
+    {
+      "name": "SM_12_Popcorn_03",
+      "mode": "convex",
+      "file": "SM_12_Popcorn_03.fbx",
+      "hulls": 2,
+      "max_vertices": 42,
+      "collision_triangles": 136
+    },
+    {
+      "name": "SM_12_Popcorn_04",
+      "mode": "convex",
+      "file": "SM_12_Popcorn_04.fbx",
+      "hulls": 2,
+      "max_vertices": 42,
+      "collision_triangles": 136
+    },
+    {
+      "name": "SM_13_Gumdrop_Gardens",
+      "mode": "convex",
+      "file": "SM_13_Gumdrop_Gardens.fbx",
+      "hulls": 72,
+      "max_vertices": 42,
+      "collision_triangles": 5760
+    },
+    {
+      "name": "SM_14_Sugar_Flowers",
+      "mode": "convex",
+      "file": "SM_14_Sugar_Flowers.fbx",
+      "hulls": 71,
+      "max_vertices": 36,
+      "collision_triangles": 4130
+    },
+    {
+      "name": "SM_15_Rainbow_Sprinkles",
+      "mode": "convex",
+      "file": "SM_15_Rainbow_Sprinkles.fbx",
+      "hulls": 335,
+      "max_vertices": 14,
+      "collision_triangles": 8040
+    },
+    {
+      "name": "SM_16_Festival_Bunting_Left",
+      "mode": "convex",
+      "file": "SM_16_Festival_Bunting_Left.fbx",
+      "hulls": 29,
+      "max_vertices": 32,
+      "collision_triangles": 740
+    },
+    {
+      "name": "SM_17_Festival_Bunting_Right",
+      "mode": "convex",
+      "file": "SM_17_Festival_Bunting_Right.fbx",
+      "hulls": 29,
+      "max_vertices": 32,
+      "collision_triangles": 738
+    },
+    {
+      "name": "SM_18_Cupcake_Welcoming_Committee",
+      "mode": "convex",
+      "file": "SM_18_Cupcake_Welcoming_Committee.fbx",
+      "hulls": 6,
+      "max_vertices": 36,
+      "collision_triangles": 402
+    },
+    {
+      "name": "SM_19_Marshmallow_Clouds",
+      "mode": "convex",
+      "file": "SM_19_Marshmallow_Clouds.fbx",
+      "hulls": 25,
+      "max_vertices": 42,
+      "collision_triangles": 2000
+    }
+  ],
+  "max_support_directions": 42,
+  "surface_triangles": 5480,
+  "total_hulls": 1278
+}

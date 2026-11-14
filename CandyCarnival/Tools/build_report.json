@@ -1,0 +1,14 @@
+{
+  "map": "/Game/CandyCarnival/Maps/CandyCarnival",
+  "actors": 49,
+  "meshes": 37,
+  "materials": 23,
+  "triangles": 439970,
+  "hero_camera": [
+    1800.0,
+    5300.0,
+    1700.0
+  ],
+  "hero_rotation": "<Struct 'Rotator' (0x000002C9B6D8E1D0) {pitch: -6.635128, yaw: -104.215853, roll: -0.000000}>",
+  "polish": "Sky gradient, soft fill, marshmallow clouds, gold marquee"
+}

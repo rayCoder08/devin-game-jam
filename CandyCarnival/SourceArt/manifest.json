@@ -1,0 +1,645 @@
+{
+  "assets": [
+    {
+      "name": "SM_01_Strawberry_Meadow",
+      "file": "SM_01_Strawberry_Meadow.fbx",
+      "materials": [
+        "StrawberrySugar"
+      ],
+      "vertices": 10201,
+      "triangles": 20000
+    },
+    {
+      "name": "SM_02_Winding_Biscuit_Path",
+      "file": "SM_02_Winding_Biscuit_Path.fbx",
+      "materials": [
+        "GoldenBiscuit"
+      ],
+      "vertices": 1687,
+      "triangles": 2880
+    },
+    {
+      "name": "SM_03_Caramel_Stream",
+      "file": "SM_03_Caramel_Stream.fbx",
+      "materials": [
+        "Caramel"
+      ],
+      "vertices": 1687,
+      "triangles": 2880
+    },
+    {
+      "name": "SM_04_Distant_Sherbet_Hills",
+      "file": "SM_04_Distant_Sherbet_Hills.fbx",
+      "materials": [
+        "RoseHill",
+        "BlushHill",
+        "Lilac"
+      ],
+      "vertices": 13056,
+      "triangles": 24576
+    },
+    {
+      "name": "SM_05_Grand_Bonbon_Pavilion",
+      "file": "SM_05_Grand_Bonbon_Pavilion.fbx",
+      "materials": [
+        "Vanilla",
+        "Raspberry",
+        "Gold",
+        "Cream",
+        "GoldenBiscuit",
+        "Bulb"
+      ],
+      "vertices": 15181,
+      "triangles": 27176
+    },
+    {
+      "name": "SM_06_Lavender_Macaron_Stall",
+      "file": "SM_06_Lavender_Macaron_Stall.fbx",
+      "materials": [
+        "Lavender",
+        "Lilac",
+        "Gold",
+        "Cream",
+        "GoldenBiscuit",
+        "Bulb"
+      ],
+      "vertices": 9025,
+      "triangles": 16256
+    },
+    {
+      "name": "SM_07_Peach_Popcorn_Stall",
+      "file": "SM_07_Peach_Popcorn_Stall.fbx",
+      "materials": [
+        "Coral",
+        "Cream",
+        "Gold",
+        "GoldenBiscuit",
+        "Bulb"
+      ],
+      "vertices": 9025,
+      "triangles": 16256
+    },
+    {
+      "name": "SM_08_Mint_Sweetshop",
+      "file": "SM_08_Mint_Sweetshop.fbx",
+      "materials": [
+        "Aqua",
+        "Mint",
+        "Gold",
+        "Cream",
+        "GoldenBiscuit",
+        "Bulb"
+      ],
+      "vertices": 9025,
+      "triangles": 16256
+    },
+    {
+      "name": "SM_09_Berry_Sweetshop",
+      "file": "SM_09_Berry_Sweetshop.fbx",
+      "materials": [
+        "Raspberry",
+        "Cream",
+        "Gold",
+        "GoldenBiscuit",
+        "Bulb"
+      ],
+      "vertices": 9025,
+      "triangles": 16256
+    },
+    {
+      "name": "SM_10_Peppermint_Gate_00",
+      "file": "SM_10_Peppermint_Gate_00.fbx",
+      "materials": [
+        "Vanilla",
+        "Raspberry",
+        "Gold"
+      ],
+      "vertices": 2289,
+      "triangles": 4348
+    },
+    {
+      "name": "SM_10_Peppermint_Gate_01",
+      "file": "SM_10_Peppermint_Gate_01.fbx",
+      "materials": [
+        "Vanilla",
+        "Raspberry",
+        "Gold"
+      ],
+      "vertices": 2289,
+      "triangles": 4348
+    },
+    {
+      "name": "SM_10_Peppermint_Gate_02",
+      "file": "SM_10_Peppermint_Gate_02.fbx",
+      "materials": [
+        "Vanilla",
+        "Raspberry",
+        "Gold"
+      ],
+      "vertices": 2289,
+      "triangles": 4348
+    },
+    {
+      "name": "SM_10_Peppermint_Gate_03",
+      "file": "SM_10_Peppermint_Gate_03.fbx",
+      "materials": [
+        "Vanilla",
+        "Raspberry",
+        "Gold"
+      ],
+      "vertices": 2289,
+      "triangles": 4348
+    },
+    {
+      "name": "SM_10_Peppermint_Gate_04",
+      "file": "SM_10_Peppermint_Gate_04.fbx",
+      "materials": [
+        "Vanilla",
+        "Raspberry",
+        "Gold"
+      ],
+      "vertices": 2289,
+      "triangles": 4348
+    },
+    {
+      "name": "SM_10_Peppermint_Gate_05",
+      "file": "SM_10_Peppermint_Gate_05.fbx",
+      "materials": [
+        "Vanilla",
+        "Raspberry",
+        "Gold"
+      ],
+      "vertices": 2289,
+      "triangles": 4348
+    },
+    {
+      "name": "SM_11_Candy_Apple_00",
+      "file": "SM_11_Candy_Apple_00.fbx",
+      "materials": [
+        "GoldenBiscuit",
+        "AppleGlaze",
+        "AppleFlesh",
+        "Chocolate",
+        "Mint",
+        "Cream"
+      ],
+      "vertices": 3447,
+      "triangles": 6802
+    },
+    {
+      "name": "SM_11_Candy_Apple_01",
+      "file": "SM_11_Candy_Apple_01.fbx",
+      "materials": [
+        "GoldenBiscuit",
+        "AppleGlaze",
+        "AppleFlesh",
+        "Chocolate",
+        "Mint",
+        "Cream"
+      ],
+      "vertices": 3447,
+      "triangles": 6802
+    },
+    {
+      "name": "SM_11_Candy_Apple_02",
+      "file": "SM_11_Candy_Apple_02.fbx",
+      "materials": [
+        "GoldenBiscuit",
+        "AppleGlaze",
+        "Chocolate",
+        "Mint",
+        "Cream"
+      ],
+      "vertices": 3241,
+      "triangles": 6184
+    },
+    {
+      "name": "SM_11_Candy_Apple_03",
+      "file": "SM_11_Candy_Apple_03.fbx",
+      "materials": [
+        "GoldenBiscuit",
+        "AppleGlaze",
+        "AppleFlesh",
+        "Chocolate",
+        "Mint",
+        "Cream"
+      ],
+      "vertices": 3447,
+      "triangles": 6802
+    },
+    {
+      "name": "SM_11_Candy_Apple_04",
+      "file": "SM_11_Candy_Apple_04.fbx",
+      "materials": [
+        "GoldenBiscuit",
+        "AppleGlaze",
+        "Chocolate",
+        "Mint",
+        "Cream"
+      ],
+      "vertices": 3241,
+      "triangles": 6184
+    },
+    {
+      "name": "SM_11_Candy_Apple_05",
+      "file": "SM_11_Candy_Apple_05.fbx",
+      "materials": [
+        "GoldenBiscuit",
+        "AppleGlaze",
+        "AppleFlesh",
+        "Chocolate",
+        "Mint",
+        "Cream"
+      ],
+      "vertices": 3447,
+      "triangles": 6802
+    },
+    {
+      "name": "SM_11_Candy_Apple_06",
+      "file": "SM_11_Candy_Apple_06.fbx",
+      "materials": [
+        "GoldenBiscuit",
+        "AppleGlaze",
+        "Chocolate",
+        "Mint",
+        "Cream"
+      ],
+      "vertices": 3241,
+      "triangles": 6184
+    },
+    {
+      "name": "SM_11_Candy_Apple_07",
+      "file": "SM_11_Candy_Apple_07.fbx",
+      "materials": [
+        "GoldenBiscuit",
+        "AppleGlaze",
+        "Chocolate",
+        "Mint",
+        "Cream"
+      ],
+      "vertices": 3241,
+      "triangles": 6184
+    },
+    {
+      "name": "SM_11_Candy_Apple_08",
+      "file": "SM_11_Candy_Apple_08.fbx",
+      "materials": [
+        "GoldenBiscuit",
+        "AppleGlaze",
+        "Chocolate",
+        "Mint",
+        "Cream"
+      ],
+      "vertices": 3241,
+      "triangles": 6184
+    },
+    {
+      "name": "SM_11_Candy_Apple_09",
+      "file": "SM_11_Candy_Apple_09.fbx",
+      "materials": [
+        "GoldenBiscuit",
+        "AppleGlaze",
+        "Chocolate",
+        "Mint",
+        "Cream"
+      ],
+      "vertices": 3241,
+      "triangles": 6184
+    },
+    {
+      "name": "SM_12_Popcorn_00",
+      "file": "SM_12_Popcorn_00.fbx",
+      "materials": [
+        "Vanilla",
+        "Coral",
+        "Gold",
+        "Popcorn",
+        "Cream"
+      ],
+      "vertices": 7264,
+      "triangles": 12544
+    },
+    {
+      "name": "SM_12_Popcorn_01",
+      "file": "SM_12_Popcorn_01.fbx",
+      "materials": [
+        "Vanilla",
+        "Coral",
+        "Gold",
+        "Popcorn",
+        "Cream"
+      ],
+      "vertices": 7264,
+      "triangles": 12544
+    },
+    {
+      "name": "SM_12_Popcorn_02",
+      "file": "SM_12_Popcorn_02.fbx",
+      "materials": [
+        "Vanilla",
+        "Coral",
+        "Gold",
+        "Popcorn",
+        "Cream"
+      ],
+      "vertices": 7264,
+      "triangles": 12544
+    },
+    {
+      "name": "SM_12_Popcorn_03",
+      "file": "SM_12_Popcorn_03.fbx",
+      "materials": [
+        "Vanilla",
+        "Coral",
+        "Gold",
+        "Popcorn",
+        "Cream"
+      ],
+      "vertices": 7264,
+      "triangles": 12544
+    },
+    {
+      "name": "SM_12_Popcorn_04",
+      "file": "SM_12_Popcorn_04.fbx",
+      "materials": [
+        "Vanilla",
+        "Coral",
+        "Gold",
+        "Popcorn",
+        "Cream"
+      ],
+      "vertices": 7264,
+      "triangles": 12544
+    },
+    {
+      "name": "SM_13_Gumdrop_Gardens",
+      "file": "SM_13_Gumdrop_Gardens.fbx",
+      "materials": [
+        "Lilac",
+        "Vanilla",
+        "Cream",
+        "Coral",
+        "Aqua",
+        "Mint"
+      ],
+      "vertices": 27072,
+      "triangles": 46080
+    },
+    {
+      "name": "SM_14_Sugar_Flowers",
+      "file": "SM_14_Sugar_Flowers.fbx",
+      "materials": [
+        "Mint",
+        "Lilac",
+        "Gold",
+        "Cream"
+      ],
+      "vertices": 31104,
+      "triangles": 53280
+    },
+    {
+      "name": "SM_15_Rainbow_Sprinkles",
+      "file": "SM_15_Rainbow_Sprinkles.fbx",
+      "materials": [
+        "Cream",
+        "Gold",
+        "Mint",
+        "Raspberry",
+        "Lilac"
+      ],
+      "vertices": 4690,
+      "triangles": 8040
+    },
+    {
+      "name": "SM_16_Festival_Bunting_Left",
+      "file": "SM_16_Festival_Bunting_Left.fbx",
+      "materials": [
+        "Chocolate",
+        "Coral",
+        "Mint",
+        "Gold",
+        "Lilac",
+        "Cream"
+      ],
+      "vertices": 423,
+      "triangles": 739
+    },
+    {
+      "name": "SM_17_Festival_Bunting_Right",
+      "file": "SM_17_Festival_Bunting_Right.fbx",
+      "materials": [
+        "Chocolate",
+        "Coral",
+        "Mint",
+        "Gold",
+        "Lilac",
+        "Cream"
+      ],
+      "vertices": 423,
+      "triangles": 739
+    },
+    {
+      "name": "SM_18_Cupcake_Welcoming_Committee",
+      "file": "SM_18_Cupcake_Welcoming_Committee.fbx",
+      "materials": [
+        "GoldenBiscuit",
+        "Cream",
+        "Ink",
+        "Vanilla",
+        "Coral",
+        "Chocolate",
+        "Raspberry",
+        "Mint"
+      ],
+      "vertices": 10326,
+      "triangles": 18636
+    },
+    {
+      "name": "SM_19_Marshmallow_Clouds",
+      "file": "SM_19_Marshmallow_Clouds.fbx",
+      "materials": [
+        "Cloud"
+      ],
+      "vertices": 9000,
+      "triangles": 16800
+    }
+  ],
+  "materials": {
+    "StrawberrySugar": [
+      [
+        0.72,
+        0.24,
+        0.36
+      ],
+      0.82
+    ],
+    "RoseHill": [
+      [
+        0.57,
+        0.18,
+        0.3
+      ],
+      0.9
+    ],
+    "BlushHill": [
+      [
+        0.91,
+        0.4,
+        0.49
+      ],
+      0.87
+    ],
+    "GoldenBiscuit": [
+      [
+        0.91,
+        0.57,
+        0.19
+      ],
+      0.67
+    ],
+    "Caramel": [
+      [
+        0.43,
+        0.105,
+        0.035
+      ],
+      0.26
+    ],
+    "Cream": [
+      [
+        1,
+        0.88,
+        0.68
+      ],
+      0.43
+    ],
+    "Vanilla": [
+      [
+        1,
+        0.96,
+        0.86
+      ],
+      0.36
+    ],
+    "Raspberry": [
+      [
+        0.72,
+        0.025,
+        0.1
+      ],
+      0.24
+    ],
+    "AppleGlaze": [
+      [
+        0.69,
+        0.012,
+        0.044
+      ],
+      0.16
+    ],
+    "AppleFlesh": [
+      [
+        0.98,
+        0.71,
+        0.35
+      ],
+      0.57
+    ],
+    "Mint": [
+      [
+        0.15,
+        0.62,
+        0.43
+      ],
+      0.43
+    ],
+    "Aqua": [
+      [
+        0.08,
+        0.47,
+        0.59
+      ],
+      0.36
+    ],
+    "Lavender": [
+      [
+        0.42,
+        0.25,
+        0.64
+      ],
+      0.52
+    ],
+    "Lilac": [
+      [
+        0.69,
+        0.49,
+        0.79
+      ],
+      0.57
+    ],
+    "Gold": [
+      [
+        0.94,
+        0.57,
+        0.13
+      ],
+      0.29
+    ],
+    "Chocolate": [
+      [
+        0.15,
+        0.047,
+        0.026
+      ],
+      0.4
+    ],
+    "Ink": [
+      [
+        0.04,
+        0.014,
+        0.022
+      ],
+      0.3
+    ],
+    "Coral": [
+      [
+        1,
+        0.26,
+        0.3
+      ],
+      0.4
+    ],
+    "Popcorn": [
+      [
+        1,
+        0.84,
+        0.42
+      ],
+      0.7
+    ],
+    "Cloud": [
+      [
+        1,
+        0.96,
+        0.9
+      ],
+      1.0
+    ],
+    "Bulb": [
+      [
+        1,
+        0.74,
+        0.35
+      ],
+      0.25
+    ],
+    "Sky": [
+      [
+        0.2,
+        0.63,
+        0.85
+      ],
+      1
+    ]
+  }
+}
